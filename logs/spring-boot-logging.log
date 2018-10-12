@@ -1,0 +1,487 @@
+2018-10-12 19:18:04.537 DEBUG 10344 --- [restartedMain] o.s.w.c.s.StandardServletEnvironment     : Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2018-10-12 19:18:04.539 DEBUG 10344 --- [restartedMain] o.s.w.c.s.StandardServletEnvironment     : Adding [servletContextInitParams] PropertySource with lowest search precedence
+2018-10-12 19:18:04.539 DEBUG 10344 --- [restartedMain] o.s.w.c.s.StandardServletEnvironment     : Adding [systemProperties] PropertySource with lowest search precedence
+2018-10-12 19:18:04.540 DEBUG 10344 --- [restartedMain] o.s.w.c.s.StandardServletEnvironment     : Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-10-12 19:18:04.549 DEBUG 10344 --- [restartedMain] o.s.w.c.s.StandardServletEnvironment     : Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+2018-10-12 19:18:04.612  INFO 10344 --- [restartedMain] com.acs.main.Application                 : Starting Application on ACS-Ilham with PID 10344 (C:\Users\ACS-Ilham\Documents\NetBeansProjects\ForeignCurrency\target\classes started by ACS-Ilham in C:\Users\ACS-Ilham\Documents\NetBeansProjects\ForeignCurrency)
+2018-10-12 19:18:04.613  INFO 10344 --- [restartedMain] com.acs.main.Application                 : No active profile set, falling back to default profiles: default
+2018-10-12 19:18:04.690  INFO 10344 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1683433d: startup date [Fri Oct 12 19:18:04 ICT 2018]; root of context hierarchy
+2018-10-12 19:18:06.846 DEBUG 10344 --- [restartedMain] o.s.w.c.s.StandardServletEnvironment     : Adding [applicationConfig: [file:./application.properties]] PropertySource with search precedence immediately lower than [applicationConfigurationProperties]
+2018-10-12 19:18:06.847 DEBUG 10344 --- [restartedMain] o.s.w.c.s.StandardServletEnvironment     : Removing [applicationConfigurationProperties] PropertySource
+2018-10-12 19:18:06.848 DEBUG 10344 --- [restartedMain] o.s.w.c.s.StandardServletEnvironment     : Removing [defaultProperties] PropertySource
+2018-10-12 19:18:08.053  INFO 10344 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 7070 (http)
+2018-10-12 19:18:08.074  INFO 10344 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-10-12 19:18:08.077  INFO 10344 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2018-10-12 19:18:08.248  INFO 10344 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-10-12 19:18:08.249 DEBUG 10344 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2018-10-12 19:18:08.250  INFO 10344 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3564 ms
+2018-10-12 19:18:08.489  INFO 10344 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-10-12 19:18:08.505  INFO 10344 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-12 19:18:08.506  INFO 10344 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-12 19:18:08.507  INFO 10344 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-12 19:18:08.508  INFO 10344 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-12 19:18:08.555 DEBUG 10344 --- [restartedMain] o.s.w.c.s.StandardServletEnvironment     : Replacing [servletContextInitParams] PropertySource with [servletContextInitParams]
+2018-10-12 19:18:09.107  INFO 10344 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1683433d: startup date [Fri Oct 12 19:18:04 ICT 2018]; root of context hierarchy
+2018-10-12 19:18:09.219 DEBUG 10344 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Looking for request mappings in application context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1683433d: startup date [Fri Oct 12 19:18:04 ICT 2018]; root of context hierarchy
+2018-10-12 19:18:09.248 DEBUG 10344 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 request handler methods found on class org.springframework.boot.autoconfigure.web.BasicErrorController: {public org.springframework.http.ResponseEntity org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)={[/error]}, public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)={[/error],produces=[text/html]}}
+2018-10-12 19:18:09.249  INFO 10344 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-12 19:18:09.257  INFO 10344 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-12 19:18:09.290 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Looking for URL mappings in application context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1683433d: startup date [Fri Oct 12 19:18:04 ICT 2018]; root of context hierarchy
+2018-10-12 19:18:09.290 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+2018-10-12 19:18:09.290 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+2018-10-12 19:18:09.291 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+2018-10-12 19:18:09.292 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
+2018-10-12 19:18:09.293 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor': no URL paths identified
+2018-10-12 19:18:09.293 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.event.internalEventListenerProcessor': no URL paths identified
+2018-10-12 19:18:09.293 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.event.internalEventListenerFactory': no URL paths identified
+2018-10-12 19:18:09.294 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'application': no URL paths identified
+2018-10-12 19:18:09.294 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory': no URL paths identified
+2018-10-12 19:18:09.294 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.AutoConfigurationPackages': no URL paths identified
+2018-10-12 19:18:09.295 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration': no URL paths identified
+2018-10-12 19:18:09.296 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.condition.BeanTypeRegistry': no URL paths identified
+2018-10-12 19:18:09.296 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'propertySourcesPlaceholderConfigurer': no URL paths identified
+2018-10-12 19:18:09.297 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration': no URL paths identified
+2018-10-12 19:18:09.297 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'standardJacksonObjectMapperBuilderCustomizer': no URL paths identified
+2018-10-12 19:18:09.297 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties': no URL paths identified
+2018-10-12 19:18:09.297 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor': no URL paths identified
+2018-10-12 19:18:09.297 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.store': no URL paths identified
+2018-10-12 19:18:09.298 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration': no URL paths identified
+2018-10-12 19:18:09.299 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jacksonObjectMapperBuilder': no URL paths identified
+2018-10-12 19:18:09.300 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration': no URL paths identified
+2018-10-12 19:18:09.300 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jacksonObjectMapper': no URL paths identified
+2018-10-12 19:18:09.300 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration': no URL paths identified
+2018-10-12 19:18:09.300 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jsonComponentModule': no URL paths identified
+2018-10-12 19:18:09.300 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.websocket.WebSocketAutoConfiguration$TomcatWebSocketConfiguration': no URL paths identified
+2018-10-12 19:18:09.300 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'websocketContainerCustomizer': no URL paths identified
+2018-10-12 19:18:09.300 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.websocket.WebSocketAutoConfiguration': no URL paths identified
+2018-10-12 19:18:09.301 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat': no URL paths identified
+2018-10-12 19:18:09.301 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'tomcatEmbeddedServletContainerFactory': no URL paths identified
+2018-10-12 19:18:09.301 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration': no URL paths identified
+2018-10-12 19:18:09.301 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'embeddedServletContainerCustomizerBeanPostProcessor': no URL paths identified
+2018-10-12 19:18:09.301 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'errorPageRegistrarBeanPostProcessor': no URL paths identified
+2018-10-12 19:18:09.301 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration$DispatcherServletConfiguration': no URL paths identified
+2018-10-12 19:18:09.302 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'dispatcherServlet': no URL paths identified
+2018-10-12 19:18:09.302 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.mvc-org.springframework.boot.autoconfigure.web.WebMvcProperties': no URL paths identified
+2018-10-12 19:18:09.302 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration': no URL paths identified
+2018-10-12 19:18:09.303 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'dispatcherServletRegistration': no URL paths identified
+2018-10-12 19:18:09.303 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration': no URL paths identified
+2018-10-12 19:18:09.303 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration': no URL paths identified
+2018-10-12 19:18:09.303 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'defaultValidator': no URL paths identified
+2018-10-12 19:18:09.303 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'methodValidationPostProcessor': no URL paths identified
+2018-10-12 19:18:09.303 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration': no URL paths identified
+2018-10-12 19:18:09.304 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'error': no URL paths identified
+2018-10-12 19:18:09.304 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'beanNameViewResolver': no URL paths identified
+2018-10-12 19:18:09.304 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration': no URL paths identified
+2018-10-12 19:18:09.304 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'conventionErrorViewResolver': no URL paths identified
+2018-10-12 19:18:09.304 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration': no URL paths identified
+2018-10-12 19:18:09.304 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'errorAttributes': no URL paths identified
+2018-10-12 19:18:09.305 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'basicErrorController': no URL paths identified
+2018-10-12 19:18:09.305 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'errorPageCustomizer': no URL paths identified
+2018-10-12 19:18:09.305 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'preserveErrorControllerTargetClassPostProcessor': no URL paths identified
+2018-10-12 19:18:09.305 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties': no URL paths identified
+2018-10-12 19:18:09.305 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$EnableWebMvcConfiguration': no URL paths identified
+2018-10-12 19:18:09.305 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'requestMappingHandlerAdapter': no URL paths identified
+2018-10-12 19:18:09.305 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'requestMappingHandlerMapping': no URL paths identified
+2018-10-12 19:18:09.306 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcValidator': no URL paths identified
+2018-10-12 19:18:09.306 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcContentNegotiationManager': no URL paths identified
+2018-10-12 19:18:09.306 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcPathMatcher': no URL paths identified
+2018-10-12 19:18:09.306 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcUrlPathHelper': no URL paths identified
+2018-10-12 19:18:09.306 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'viewControllerHandlerMapping': no URL paths identified
+2018-10-12 19:18:09.306 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'beanNameHandlerMapping': no URL paths identified
+2018-10-12 19:18:09.306 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'resourceHandlerMapping': no URL paths identified
+2018-10-12 19:18:09.307 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcResourceUrlProvider': no URL paths identified
+2018-10-12 19:18:09.307 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'defaultServletHandlerMapping': no URL paths identified
+2018-10-12 19:18:09.307 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcConversionService': no URL paths identified
+2018-10-12 19:18:09.307 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcUriComponentsContributor': no URL paths identified
+2018-10-12 19:18:09.308 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'httpRequestHandlerAdapter': no URL paths identified
+2018-10-12 19:18:09.308 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'simpleControllerHandlerAdapter': no URL paths identified
+2018-10-12 19:18:09.308 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'handlerExceptionResolver': no URL paths identified
+2018-10-12 19:18:09.308 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcViewResolver': no URL paths identified
+2018-10-12 19:18:09.309 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter$FaviconConfiguration': no URL paths identified
+2018-10-12 19:18:09.310 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'faviconHandlerMapping': no URL paths identified
+2018-10-12 19:18:09.310 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'faviconRequestHandler': no URL paths identified
+2018-10-12 19:18:09.310 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter': no URL paths identified
+2018-10-12 19:18:09.311 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'defaultViewResolver': no URL paths identified
+2018-10-12 19:18:09.311 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'viewResolver': no URL paths identified
+2018-10-12 19:18:09.311 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'welcomePageHandlerMapping': no URL paths identified
+2018-10-12 19:18:09.311 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'requestContextFilter': no URL paths identified
+2018-10-12 19:18:09.311 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration': no URL paths identified
+2018-10-12 19:18:09.311 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'hiddenHttpMethodFilter': no URL paths identified
+2018-10-12 19:18:09.311 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'httpPutFormContentFilter': no URL paths identified
+2018-10-12 19:18:09.311 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration': no URL paths identified
+2018-10-12 19:18:09.311 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mbeanExporter': no URL paths identified
+2018-10-12 19:18:09.312 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'objectNamingStrategy': no URL paths identified
+2018-10-12 19:18:09.312 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mbeanServer': no URL paths identified
+2018-10-12 19:18:09.312 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration$JdkDynamicAutoProxyConfiguration': no URL paths identified
+2018-10-12 19:18:09.312 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.aop.config.internalAutoProxyCreator': no URL paths identified
+2018-10-12 19:18:09.312 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration': no URL paths identified
+2018-10-12 19:18:09.312 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.transaction.jta.JtaAutoConfiguration': no URL paths identified
+2018-10-12 19:18:09.312 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.jta-org.springframework.boot.autoconfigure.transaction.jta.JtaProperties': no URL paths identified
+2018-10-12 19:18:09.312 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Tomcat': no URL paths identified
+2018-10-12 19:18:09.312 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'dataSource': no URL paths identified
+2018-10-12 19:18:09.313 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$PooledDataSourceConfiguration': no URL paths identified
+2018-10-12 19:18:09.313 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$TomcatDataSourcePoolMetadataProviderConfiguration': no URL paths identified
+2018-10-12 19:18:09.313 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'tomcatPoolDataSourceMetadataProvider': no URL paths identified
+2018-10-12 19:18:09.313 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration': no URL paths identified
+2018-10-12 19:18:09.313 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration': no URL paths identified
+2018-10-12 19:18:09.313 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'dataSourceInitializer': no URL paths identified
+2018-10-12 19:18:09.313 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties': no URL paths identified
+2018-10-12 19:18:09.314 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'dataSourceInitializerPostProcessor': no URL paths identified
+2018-10-12 19:18:09.315 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration': no URL paths identified
+2018-10-12 19:18:09.316 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.dao.PersistenceExceptionTranslationAutoConfiguration': no URL paths identified
+2018-10-12 19:18:09.316 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'persistenceExceptionTranslationPostProcessor': no URL paths identified
+2018-10-12 19:18:09.316 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration': no URL paths identified
+2018-10-12 19:18:09.316 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'emBeanDefinitionRegistrarPostProcessor': no URL paths identified
+2018-10-12 19:18:09.316 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jpaMappingContext': no URL paths identified
+2018-10-12 19:18:09.316 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jpaContext': no URL paths identified
+2018-10-12 19:18:09.317 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration': no URL paths identified
+2018-10-12 19:18:09.317 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'stringHttpMessageConverter': no URL paths identified
+2018-10-12 19:18:09.317 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.http.encoding-org.springframework.boot.autoconfigure.web.HttpEncodingProperties': no URL paths identified
+2018-10-12 19:18:09.317 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration': no URL paths identified
+2018-10-12 19:18:09.317 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mappingJackson2HttpMessageConverter': no URL paths identified
+2018-10-12 19:18:09.317 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.JacksonHttpMessageConvertersConfiguration': no URL paths identified
+2018-10-12 19:18:09.317 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.HttpMessageConvertersAutoConfiguration': no URL paths identified
+2018-10-12 19:18:09.317 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'messageConverters': no URL paths identified
+2018-10-12 19:18:09.317 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.data.web.config.SpringDataWebConfiguration': no URL paths identified
+2018-10-12 19:18:09.318 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'pageableResolver': no URL paths identified
+2018-10-12 19:18:09.318 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'sortResolver': no URL paths identified
+2018-10-12 19:18:09.318 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.data.web.config.SpringDataJacksonConfiguration': no URL paths identified
+2018-10-12 19:18:09.318 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jacksonGeoModule': no URL paths identified
+2018-10-12 19:18:09.319 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration': no URL paths identified
+2018-10-12 19:18:09.320 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration': no URL paths identified
+2018-10-12 19:18:09.320 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties': no URL paths identified
+2018-10-12 19:18:09.320 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$DataSourceTransactionManagerConfiguration': no URL paths identified
+2018-10-12 19:18:09.321 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'transactionManager': no URL paths identified
+2018-10-12 19:18:09.321 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration': no URL paths identified
+2018-10-12 19:18:09.322 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration': no URL paths identified
+2018-10-12 19:18:09.322 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jdbcTemplate': no URL paths identified
+2018-10-12 19:18:09.322 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'namedParameterJdbcTemplate': no URL paths identified
+2018-10-12 19:18:09.322 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': no URL paths identified
+2018-10-12 19:18:09.322 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.transaction.config.internalTransactionAdvisor': no URL paths identified
+2018-10-12 19:18:09.323 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'transactionAttributeSource': no URL paths identified
+2018-10-12 19:18:09.323 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'transactionInterceptor': no URL paths identified
+2018-10-12 19:18:09.323 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.transaction.config.internalTransactionalEventListenerFactory': no URL paths identified
+2018-10-12 19:18:09.323 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$EnableTransactionManagementConfiguration$CglibAutoProxyConfiguration': no URL paths identified
+2018-10-12 19:18:09.323 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$EnableTransactionManagementConfiguration': no URL paths identified
+2018-10-12 19:18:09.323 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$TransactionTemplateConfiguration': no URL paths identified
+2018-10-12 19:18:09.323 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'transactionTemplate': no URL paths identified
+2018-10-12 19:18:09.323 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration': no URL paths identified
+2018-10-12 19:18:09.323 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'platformTransactionManagerCustomizers': no URL paths identified
+2018-10-12 19:18:09.324 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties': no URL paths identified
+2018-10-12 19:18:09.324 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.HttpEncodingAutoConfiguration': no URL paths identified
+2018-10-12 19:18:09.324 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'characterEncodingFilter': no URL paths identified
+2018-10-12 19:18:09.325 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'localeCharsetMappingsCustomizer': no URL paths identified
+2018-10-12 19:18:09.326 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.MultipartAutoConfiguration': no URL paths identified
+2018-10-12 19:18:09.326 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'multipartConfigElement': no URL paths identified
+2018-10-12 19:18:09.326 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'multipartResolver': no URL paths identified
+2018-10-12 19:18:09.327 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.http.multipart-org.springframework.boot.autoconfigure.web.MultipartProperties': no URL paths identified
+2018-10-12 19:18:09.327 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.ServerPropertiesAutoConfiguration': no URL paths identified
+2018-10-12 19:18:09.327 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'serverProperties': no URL paths identified
+2018-10-12 19:18:09.327 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'duplicateServerPropertiesDetector': no URL paths identified
+2018-10-12 19:18:09.327 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.WebClientAutoConfiguration$RestTemplateConfiguration': no URL paths identified
+2018-10-12 19:18:09.327 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'restTemplateBuilder': no URL paths identified
+2018-10-12 19:18:09.328 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.WebClientAutoConfiguration': no URL paths identified
+2018-10-12 19:18:09.328 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration': no URL paths identified
+2018-10-12 19:18:09.328 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'inMemoryDatabaseShutdownExecutor': no URL paths identified
+2018-10-12 19:18:09.328 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartConfiguration': no URL paths identified
+2018-10-12 19:18:09.328 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'classPathFileSystemWatcher': no URL paths identified
+2018-10-12 19:18:09.328 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'classPathRestartStrategy': no URL paths identified
+2018-10-12 19:18:09.329 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'hateoasObjenesisCacheDisabler': no URL paths identified
+2018-10-12 19:18:09.329 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'fileSystemWatcherFactory': no URL paths identified
+2018-10-12 19:18:09.329 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$LiveReloadConfiguration': no URL paths identified
+2018-10-12 19:18:09.330 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'liveReloadServer': no URL paths identified
+2018-10-12 19:18:09.330 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'optionalLiveReloadServer': no URL paths identified
+2018-10-12 19:18:09.330 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration': no URL paths identified
+2018-10-12 19:18:09.330 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.devtools-org.springframework.boot.devtools.autoconfigure.DevToolsProperties': no URL paths identified
+2018-10-12 19:18:09.330 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'autoConfigurationReport': no URL paths identified
+2018-10-12 19:18:09.331 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'springApplicationArguments': no URL paths identified
+2018-10-12 19:18:09.332 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'springBootBanner': no URL paths identified
+2018-10-12 19:18:09.333 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'springBootLoggingSystem': no URL paths identified
+2018-10-12 19:18:09.333 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'environment': no URL paths identified
+2018-10-12 19:18:09.333 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'systemProperties': no URL paths identified
+2018-10-12 19:18:09.334 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'systemEnvironment': no URL paths identified
+2018-10-12 19:18:09.334 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry': no URL paths identified
+2018-10-12 19:18:09.334 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'messageSource': no URL paths identified
+2018-10-12 19:18:09.334 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'applicationEventMulticaster': no URL paths identified
+2018-10-12 19:18:09.334 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'servletContext': no URL paths identified
+2018-10-12 19:18:09.334 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'contextParameters': no URL paths identified
+2018-10-12 19:18:09.334 DEBUG 10344 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'contextAttributes': no URL paths identified
+2018-10-12 19:18:09.353  INFO 10344 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-12 19:18:09.354  INFO 10344 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-12 19:18:09.375 DEBUG 10344 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Looking for exception mappings: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1683433d: startup date [Fri Oct 12 19:18:04 ICT 2018]; root of context hierarchy
+2018-10-12 19:18:09.414  INFO 10344 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-12 19:18:09.942  WARN 10344 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: At least one JPA metamodel must be present!
+2018-10-12 19:18:09.943  INFO 10344 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-10-12 19:18:09.946  INFO 10344 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-10-12 19:18:09.972  INFO 10344 --- [restartedMain] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-10-12 19:18:09.994 ERROR 10344 --- [restartedMain] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: At least one JPA metamodel must be present!
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:742) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at com.acs.main.Application.main(Application.java:27) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_161]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_161]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_161]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_161]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+Caused by: java.lang.IllegalArgumentException: At least one JPA metamodel must be present!
+	at org.springframework.util.Assert.notEmpty(Assert.java:277) ~[spring-core-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.data.jpa.mapping.JpaMetamodelMappingContext.<init>(JpaMetamodelMappingContext.java:52) ~[spring-data-jpa-1.11.4.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.config.JpaMetamodelMappingContextFactoryBean.createInstance(JpaMetamodelMappingContextFactoryBean.java:71) ~[spring-data-jpa-1.11.4.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.config.JpaMetamodelMappingContextFactoryBean.createInstance(JpaMetamodelMappingContextFactoryBean.java:26) ~[spring-data-jpa-1.11.4.RELEASE.jar:na]
+	at org.springframework.beans.factory.config.AbstractFactoryBean.afterPropertiesSet(AbstractFactoryBean.java:134) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	... 21 common frames omitted
+
+2018-10-12 19:20:27.086 DEBUG 11356 --- [restartedMain] o.s.w.c.s.StandardServletEnvironment     : Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2018-10-12 19:20:27.088 DEBUG 11356 --- [restartedMain] o.s.w.c.s.StandardServletEnvironment     : Adding [servletContextInitParams] PropertySource with lowest search precedence
+2018-10-12 19:20:27.089 DEBUG 11356 --- [restartedMain] o.s.w.c.s.StandardServletEnvironment     : Adding [systemProperties] PropertySource with lowest search precedence
+2018-10-12 19:20:27.089 DEBUG 11356 --- [restartedMain] o.s.w.c.s.StandardServletEnvironment     : Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-10-12 19:20:27.090 DEBUG 11356 --- [restartedMain] o.s.w.c.s.StandardServletEnvironment     : Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+2018-10-12 19:20:27.141  INFO 11356 --- [restartedMain] com.acs.main.Application                 : Starting Application on ACS-Ilham with PID 11356 (C:\Users\ACS-Ilham\Documents\NetBeansProjects\ForeignCurrency\target\classes started by ACS-Ilham in C:\Users\ACS-Ilham\Documents\NetBeansProjects\ForeignCurrency)
+2018-10-12 19:20:27.141  INFO 11356 --- [restartedMain] com.acs.main.Application                 : No active profile set, falling back to default profiles: default
+2018-10-12 19:20:27.228  INFO 11356 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@11926d77: startup date [Fri Oct 12 19:20:27 ICT 2018]; root of context hierarchy
+2018-10-12 19:20:29.304 DEBUG 11356 --- [restartedMain] o.s.w.c.s.StandardServletEnvironment     : Adding [applicationConfig: [file:./application.properties]] PropertySource with search precedence immediately lower than [applicationConfigurationProperties]
+2018-10-12 19:20:29.305 DEBUG 11356 --- [restartedMain] o.s.w.c.s.StandardServletEnvironment     : Removing [applicationConfigurationProperties] PropertySource
+2018-10-12 19:20:29.306 DEBUG 11356 --- [restartedMain] o.s.w.c.s.StandardServletEnvironment     : Removing [defaultProperties] PropertySource
+2018-10-12 19:20:30.361  INFO 11356 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 7070 (http)
+2018-10-12 19:20:30.379  INFO 11356 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-10-12 19:20:30.381  INFO 11356 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2018-10-12 19:20:30.647  INFO 11356 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-10-12 19:20:30.648 DEBUG 11356 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2018-10-12 19:20:30.649  INFO 11356 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3425 ms
+2018-10-12 19:20:30.856  INFO 11356 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-10-12 19:20:30.863  INFO 11356 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-12 19:20:30.864  INFO 11356 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-12 19:20:30.866  INFO 11356 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-12 19:20:30.867  INFO 11356 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-12 19:20:30.899 DEBUG 11356 --- [restartedMain] o.s.w.c.s.StandardServletEnvironment     : Replacing [servletContextInitParams] PropertySource with [servletContextInitParams]
+2018-10-12 19:20:32.346  INFO 11356 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-10-12 19:20:35.030  INFO 11356 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-10-12 19:20:35.566  INFO 11356 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@11926d77: startup date [Fri Oct 12 19:20:27 ICT 2018]; root of context hierarchy
+2018-10-12 19:20:35.665 DEBUG 11356 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Looking for request mappings in application context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@11926d77: startup date [Fri Oct 12 19:20:27 ICT 2018]; root of context hierarchy
+2018-10-12 19:20:35.687 DEBUG 11356 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 request handler methods found on class org.springframework.boot.autoconfigure.web.BasicErrorController: {public org.springframework.http.ResponseEntity org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)={[/error]}, public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)={[/error],produces=[text/html]}}
+2018-10-12 19:20:35.689  INFO 11356 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-12 19:20:35.690  INFO 11356 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-12 19:20:35.717 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Looking for URL mappings in application context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@11926d77: startup date [Fri Oct 12 19:20:27 ICT 2018]; root of context hierarchy
+2018-10-12 19:20:35.718 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+2018-10-12 19:20:35.720 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+2018-10-12 19:20:35.721 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+2018-10-12 19:20:35.721 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
+2018-10-12 19:20:35.721 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor': no URL paths identified
+2018-10-12 19:20:35.722 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.event.internalEventListenerProcessor': no URL paths identified
+2018-10-12 19:20:35.724 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.event.internalEventListenerFactory': no URL paths identified
+2018-10-12 19:20:35.725 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'application': no URL paths identified
+2018-10-12 19:20:35.725 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory': no URL paths identified
+2018-10-12 19:20:35.726 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.AutoConfigurationPackages': no URL paths identified
+2018-10-12 19:20:35.726 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.data.jpa.repository.config.JpaRepositoryConfigExtension#0': no URL paths identified
+2018-10-12 19:20:35.727 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'emBeanDefinitionRegistrarPostProcessor': no URL paths identified
+2018-10-12 19:20:35.727 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jpaMappingContext': no URL paths identified
+2018-10-12 19:20:35.727 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jpaContext': no URL paths identified
+2018-10-12 19:20:35.727 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration': no URL paths identified
+2018-10-12 19:20:35.727 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.condition.BeanTypeRegistry': no URL paths identified
+2018-10-12 19:20:35.727 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'propertySourcesPlaceholderConfigurer': no URL paths identified
+2018-10-12 19:20:35.728 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration': no URL paths identified
+2018-10-12 19:20:35.729 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'standardJacksonObjectMapperBuilderCustomizer': no URL paths identified
+2018-10-12 19:20:35.729 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties': no URL paths identified
+2018-10-12 19:20:35.729 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor': no URL paths identified
+2018-10-12 19:20:35.729 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.store': no URL paths identified
+2018-10-12 19:20:35.729 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration': no URL paths identified
+2018-10-12 19:20:35.729 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jacksonObjectMapperBuilder': no URL paths identified
+2018-10-12 19:20:35.731 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration': no URL paths identified
+2018-10-12 19:20:35.733 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jacksonObjectMapper': no URL paths identified
+2018-10-12 19:20:35.733 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration': no URL paths identified
+2018-10-12 19:20:35.733 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jsonComponentModule': no URL paths identified
+2018-10-12 19:20:35.734 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.websocket.WebSocketAutoConfiguration$TomcatWebSocketConfiguration': no URL paths identified
+2018-10-12 19:20:35.734 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'websocketContainerCustomizer': no URL paths identified
+2018-10-12 19:20:35.734 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.websocket.WebSocketAutoConfiguration': no URL paths identified
+2018-10-12 19:20:35.734 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat': no URL paths identified
+2018-10-12 19:20:35.734 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'tomcatEmbeddedServletContainerFactory': no URL paths identified
+2018-10-12 19:20:35.735 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration': no URL paths identified
+2018-10-12 19:20:35.735 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'embeddedServletContainerCustomizerBeanPostProcessor': no URL paths identified
+2018-10-12 19:20:35.735 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'errorPageRegistrarBeanPostProcessor': no URL paths identified
+2018-10-12 19:20:35.735 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration$DispatcherServletConfiguration': no URL paths identified
+2018-10-12 19:20:35.735 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'dispatcherServlet': no URL paths identified
+2018-10-12 19:20:35.735 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.mvc-org.springframework.boot.autoconfigure.web.WebMvcProperties': no URL paths identified
+2018-10-12 19:20:35.735 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration': no URL paths identified
+2018-10-12 19:20:35.738 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'dispatcherServletRegistration': no URL paths identified
+2018-10-12 19:20:35.738 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration': no URL paths identified
+2018-10-12 19:20:35.738 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration': no URL paths identified
+2018-10-12 19:20:35.738 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'defaultValidator': no URL paths identified
+2018-10-12 19:20:35.738 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'methodValidationPostProcessor': no URL paths identified
+2018-10-12 19:20:35.738 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration': no URL paths identified
+2018-10-12 19:20:35.738 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'error': no URL paths identified
+2018-10-12 19:20:35.738 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'beanNameViewResolver': no URL paths identified
+2018-10-12 19:20:35.739 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration': no URL paths identified
+2018-10-12 19:20:35.739 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'conventionErrorViewResolver': no URL paths identified
+2018-10-12 19:20:35.739 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration': no URL paths identified
+2018-10-12 19:20:35.739 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'errorAttributes': no URL paths identified
+2018-10-12 19:20:35.739 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'basicErrorController': no URL paths identified
+2018-10-12 19:20:35.739 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'errorPageCustomizer': no URL paths identified
+2018-10-12 19:20:35.739 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'preserveErrorControllerTargetClassPostProcessor': no URL paths identified
+2018-10-12 19:20:35.739 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties': no URL paths identified
+2018-10-12 19:20:35.739 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$EnableWebMvcConfiguration': no URL paths identified
+2018-10-12 19:20:35.739 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'requestMappingHandlerAdapter': no URL paths identified
+2018-10-12 19:20:35.739 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'requestMappingHandlerMapping': no URL paths identified
+2018-10-12 19:20:35.739 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcValidator': no URL paths identified
+2018-10-12 19:20:35.740 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcContentNegotiationManager': no URL paths identified
+2018-10-12 19:20:35.740 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcPathMatcher': no URL paths identified
+2018-10-12 19:20:35.740 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcUrlPathHelper': no URL paths identified
+2018-10-12 19:20:35.740 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'viewControllerHandlerMapping': no URL paths identified
+2018-10-12 19:20:35.740 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'beanNameHandlerMapping': no URL paths identified
+2018-10-12 19:20:35.740 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'resourceHandlerMapping': no URL paths identified
+2018-10-12 19:20:35.740 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcResourceUrlProvider': no URL paths identified
+2018-10-12 19:20:35.740 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'defaultServletHandlerMapping': no URL paths identified
+2018-10-12 19:20:35.740 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcConversionService': no URL paths identified
+2018-10-12 19:20:35.740 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcUriComponentsContributor': no URL paths identified
+2018-10-12 19:20:35.740 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'httpRequestHandlerAdapter': no URL paths identified
+2018-10-12 19:20:35.742 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'simpleControllerHandlerAdapter': no URL paths identified
+2018-10-12 19:20:35.742 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'handlerExceptionResolver': no URL paths identified
+2018-10-12 19:20:35.742 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcViewResolver': no URL paths identified
+2018-10-12 19:20:35.742 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter$FaviconConfiguration': no URL paths identified
+2018-10-12 19:20:35.742 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'faviconHandlerMapping': no URL paths identified
+2018-10-12 19:20:35.742 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'faviconRequestHandler': no URL paths identified
+2018-10-12 19:20:35.742 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter': no URL paths identified
+2018-10-12 19:20:35.742 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'defaultViewResolver': no URL paths identified
+2018-10-12 19:20:35.742 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'viewResolver': no URL paths identified
+2018-10-12 19:20:35.742 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'welcomePageHandlerMapping': no URL paths identified
+2018-10-12 19:20:35.742 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'requestContextFilter': no URL paths identified
+2018-10-12 19:20:35.742 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration': no URL paths identified
+2018-10-12 19:20:35.742 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'hiddenHttpMethodFilter': no URL paths identified
+2018-10-12 19:20:35.743 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'httpPutFormContentFilter': no URL paths identified
+2018-10-12 19:20:35.743 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration': no URL paths identified
+2018-10-12 19:20:35.743 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mbeanExporter': no URL paths identified
+2018-10-12 19:20:35.743 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'objectNamingStrategy': no URL paths identified
+2018-10-12 19:20:35.743 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mbeanServer': no URL paths identified
+2018-10-12 19:20:35.743 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration$JdkDynamicAutoProxyConfiguration': no URL paths identified
+2018-10-12 19:20:35.743 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.aop.config.internalAutoProxyCreator': no URL paths identified
+2018-10-12 19:20:35.743 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration': no URL paths identified
+2018-10-12 19:20:35.743 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.transaction.jta.JtaAutoConfiguration': no URL paths identified
+2018-10-12 19:20:35.748 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.jta-org.springframework.boot.autoconfigure.transaction.jta.JtaProperties': no URL paths identified
+2018-10-12 19:20:35.749 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Tomcat': no URL paths identified
+2018-10-12 19:20:35.749 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'dataSource': no URL paths identified
+2018-10-12 19:20:35.749 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$PooledDataSourceConfiguration': no URL paths identified
+2018-10-12 19:20:35.751 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$TomcatDataSourcePoolMetadataProviderConfiguration': no URL paths identified
+2018-10-12 19:20:35.752 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'tomcatPoolDataSourceMetadataProvider': no URL paths identified
+2018-10-12 19:20:35.752 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration': no URL paths identified
+2018-10-12 19:20:35.752 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration': no URL paths identified
+2018-10-12 19:20:35.752 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'dataSourceInitializer': no URL paths identified
+2018-10-12 19:20:35.752 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties': no URL paths identified
+2018-10-12 19:20:35.752 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'dataSourceInitializerPostProcessor': no URL paths identified
+2018-10-12 19:20:35.752 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration': no URL paths identified
+2018-10-12 19:20:35.752 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'openEntityManagerInViewInterceptor': no URL paths identified
+2018-10-12 19:20:35.752 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration': no URL paths identified
+2018-10-12 19:20:35.752 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration': no URL paths identified
+2018-10-12 19:20:35.752 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'transactionManager': no URL paths identified
+2018-10-12 19:20:35.752 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jpaVendorAdapter': no URL paths identified
+2018-10-12 19:20:35.752 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'entityManagerFactoryBuilder': no URL paths identified
+2018-10-12 19:20:35.753 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'entityManagerFactory': no URL paths identified
+2018-10-12 19:20:35.753 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.jpa-org.springframework.boot.autoconfigure.orm.jpa.JpaProperties': no URL paths identified
+2018-10-12 19:20:35.753 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'dataSourceInitializedPublisher': no URL paths identified
+2018-10-12 19:20:35.753 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration': no URL paths identified
+2018-10-12 19:20:35.753 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.dao.PersistenceExceptionTranslationAutoConfiguration': no URL paths identified
+2018-10-12 19:20:35.753 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'persistenceExceptionTranslationPostProcessor': no URL paths identified
+2018-10-12 19:20:35.753 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration': no URL paths identified
+2018-10-12 19:20:35.753 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'stringHttpMessageConverter': no URL paths identified
+2018-10-12 19:20:35.753 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.http.encoding-org.springframework.boot.autoconfigure.web.HttpEncodingProperties': no URL paths identified
+2018-10-12 19:20:35.753 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration': no URL paths identified
+2018-10-12 19:20:35.753 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mappingJackson2HttpMessageConverter': no URL paths identified
+2018-10-12 19:20:35.753 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.JacksonHttpMessageConvertersConfiguration': no URL paths identified
+2018-10-12 19:20:35.753 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.HttpMessageConvertersAutoConfiguration': no URL paths identified
+2018-10-12 19:20:35.753 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'messageConverters': no URL paths identified
+2018-10-12 19:20:35.754 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.data.web.config.SpringDataWebConfiguration': no URL paths identified
+2018-10-12 19:20:35.754 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'pageableResolver': no URL paths identified
+2018-10-12 19:20:35.754 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'sortResolver': no URL paths identified
+2018-10-12 19:20:35.754 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.data.web.config.SpringDataJacksonConfiguration': no URL paths identified
+2018-10-12 19:20:35.754 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jacksonGeoModule': no URL paths identified
+2018-10-12 19:20:35.754 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration': no URL paths identified
+2018-10-12 19:20:35.754 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration': no URL paths identified
+2018-10-12 19:20:35.754 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties': no URL paths identified
+2018-10-12 19:20:35.754 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$DataSourceTransactionManagerConfiguration': no URL paths identified
+2018-10-12 19:20:35.758 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration': no URL paths identified
+2018-10-12 19:20:35.758 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration': no URL paths identified
+2018-10-12 19:20:35.759 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jdbcTemplate': no URL paths identified
+2018-10-12 19:20:35.759 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'namedParameterJdbcTemplate': no URL paths identified
+2018-10-12 19:20:35.759 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': no URL paths identified
+2018-10-12 19:20:35.759 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.transaction.config.internalTransactionAdvisor': no URL paths identified
+2018-10-12 19:20:35.759 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'transactionAttributeSource': no URL paths identified
+2018-10-12 19:20:35.759 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'transactionInterceptor': no URL paths identified
+2018-10-12 19:20:35.759 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.transaction.config.internalTransactionalEventListenerFactory': no URL paths identified
+2018-10-12 19:20:35.759 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$EnableTransactionManagementConfiguration$CglibAutoProxyConfiguration': no URL paths identified
+2018-10-12 19:20:35.759 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$EnableTransactionManagementConfiguration': no URL paths identified
+2018-10-12 19:20:35.759 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$TransactionTemplateConfiguration': no URL paths identified
+2018-10-12 19:20:35.759 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'transactionTemplate': no URL paths identified
+2018-10-12 19:20:35.759 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration': no URL paths identified
+2018-10-12 19:20:35.759 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'platformTransactionManagerCustomizers': no URL paths identified
+2018-10-12 19:20:35.759 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties': no URL paths identified
+2018-10-12 19:20:35.759 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.HttpEncodingAutoConfiguration': no URL paths identified
+2018-10-12 19:20:35.760 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'characterEncodingFilter': no URL paths identified
+2018-10-12 19:20:35.760 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'localeCharsetMappingsCustomizer': no URL paths identified
+2018-10-12 19:20:35.760 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.MultipartAutoConfiguration': no URL paths identified
+2018-10-12 19:20:35.763 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'multipartConfigElement': no URL paths identified
+2018-10-12 19:20:35.763 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'multipartResolver': no URL paths identified
+2018-10-12 19:20:35.764 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.http.multipart-org.springframework.boot.autoconfigure.web.MultipartProperties': no URL paths identified
+2018-10-12 19:20:35.764 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.ServerPropertiesAutoConfiguration': no URL paths identified
+2018-10-12 19:20:35.764 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'serverProperties': no URL paths identified
+2018-10-12 19:20:35.764 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'duplicateServerPropertiesDetector': no URL paths identified
+2018-10-12 19:20:35.764 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.WebClientAutoConfiguration$RestTemplateConfiguration': no URL paths identified
+2018-10-12 19:20:35.764 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'restTemplateBuilder': no URL paths identified
+2018-10-12 19:20:35.764 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.WebClientAutoConfiguration': no URL paths identified
+2018-10-12 19:20:35.764 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration$DatabaseShutdownExecutorJpaDependencyConfiguration': no URL paths identified
+2018-10-12 19:20:35.764 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration': no URL paths identified
+2018-10-12 19:20:35.764 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'inMemoryDatabaseShutdownExecutor': no URL paths identified
+2018-10-12 19:20:35.764 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartConfiguration': no URL paths identified
+2018-10-12 19:20:35.764 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'classPathFileSystemWatcher': no URL paths identified
+2018-10-12 19:20:35.764 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'classPathRestartStrategy': no URL paths identified
+2018-10-12 19:20:35.764 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'hateoasObjenesisCacheDisabler': no URL paths identified
+2018-10-12 19:20:35.764 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'fileSystemWatcherFactory': no URL paths identified
+2018-10-12 19:20:35.764 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$LiveReloadConfiguration': no URL paths identified
+2018-10-12 19:20:35.765 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'liveReloadServer': no URL paths identified
+2018-10-12 19:20:35.765 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'optionalLiveReloadServer': no URL paths identified
+2018-10-12 19:20:35.765 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration': no URL paths identified
+2018-10-12 19:20:35.767 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.devtools-org.springframework.boot.devtools.autoconfigure.DevToolsProperties': no URL paths identified
+2018-10-12 19:20:35.767 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.orm.jpa.SharedEntityManagerCreator#0': no URL paths identified
+2018-10-12 19:20:35.767 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'autoConfigurationReport': no URL paths identified
+2018-10-12 19:20:35.768 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'springApplicationArguments': no URL paths identified
+2018-10-12 19:20:35.768 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'springBootBanner': no URL paths identified
+2018-10-12 19:20:35.768 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'springBootLoggingSystem': no URL paths identified
+2018-10-12 19:20:35.768 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'environment': no URL paths identified
+2018-10-12 19:20:35.768 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'systemProperties': no URL paths identified
+2018-10-12 19:20:35.768 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'systemEnvironment': no URL paths identified
+2018-10-12 19:20:35.768 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry': no URL paths identified
+2018-10-12 19:20:35.768 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'messageSource': no URL paths identified
+2018-10-12 19:20:35.768 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'applicationEventMulticaster': no URL paths identified
+2018-10-12 19:20:35.768 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'servletContext': no URL paths identified
+2018-10-12 19:20:35.768 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'contextParameters': no URL paths identified
+2018-10-12 19:20:35.768 DEBUG 11356 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'contextAttributes': no URL paths identified
+2018-10-12 19:20:35.795  INFO 11356 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-12 19:20:35.797  INFO 11356 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-12 19:20:35.816 DEBUG 11356 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Looking for exception mappings: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@11926d77: startup date [Fri Oct 12 19:20:27 ICT 2018]; root of context hierarchy
+2018-10-12 19:20:35.915  INFO 11356 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-12 19:20:36.612  INFO 11356 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-10-12 19:20:36.700  INFO 11356 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-10-12 19:20:36.717 DEBUG 11356 --- [restartedMain] o.s.w.s.resource.ResourceUrlProvider     : Looking for resource handler mappings
+2018-10-12 19:20:36.718 DEBUG 11356 --- [restartedMain] o.s.w.s.resource.ResourceUrlProvider     : Found resource handler mapping: URL pattern="/**/favicon.ico", locations=[ServletContext resource [/], class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], class path resource []], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@1ab31c5e]
+2018-10-12 19:20:36.718 DEBUG 11356 --- [restartedMain] o.s.w.s.resource.ResourceUrlProvider     : Found resource handler mapping: URL pattern="/webjars/**", locations=[class path resource [META-INF/resources/webjars/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@234f4e5]
+2018-10-12 19:20:36.719 DEBUG 11356 --- [restartedMain] o.s.w.s.resource.ResourceUrlProvider     : Found resource handler mapping: URL pattern="/**", locations=[ServletContext resource [/], class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@412cb003]
+2018-10-12 19:20:36.888  INFO 11356 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 7070 (http)
+2018-10-12 19:20:36.891 DEBUG 11356 --- [restartedMain] o.s.w.c.s.StandardServletEnvironment     : Adding [server.ports] PropertySource with highest search precedence
+2018-10-12 19:20:36.896  INFO 11356 --- [restartedMain] com.acs.main.Application                 : Started Application in 10.193 seconds (JVM running for 10.893)

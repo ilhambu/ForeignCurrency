@@ -17,7 +17,9 @@
         <version>1.5.4.RELEASE</version>
     </parent>
     
-    <dependencies>
+    <dependencies>      
+        <!-- Spring Boot -->
+        
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -52,6 +54,12 @@
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
+        </dependency>
+        
+        <!-- Json -->       
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
         </dependency>
         
     </dependencies>

@@ -8,6 +8,8 @@ package com.acs.main;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 
@@ -16,7 +18,9 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
  * @author ACS-Ilham
  */
 @SpringBootApplication
-@EnableJpaRepositories
+@EnableJpaRepositories(basePackages = "com.acs.caster.repository")
+@EntityScan(basePackages = "com.acs.caster.entity")
+@ComponentScan(basePackages = "com.acs.caster.controller")
 public class Application {
 
     /**

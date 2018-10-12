@@ -18,9 +18,9 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
  * @author ACS-Ilham
  */
 @SpringBootApplication
-@EnableJpaRepositories(basePackages = "com.acs.caster.repository")
-@EntityScan(basePackages = "com.acs.caster.entity")
-@ComponentScan(basePackages = "com.acs.caster.controller")
+@EnableJpaRepositories(basePackages = "com.acs.repository")
+@EntityScan(basePackages = "com.acs.entity")
+@ComponentScan(basePackages = "com.acs.controller")
 public class Application {
 
     /**

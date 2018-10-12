@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.acs.caster.controller;
+package com.acs.controller;
 
-import com.acs.caster.entity.USDToGBP;
-import com.acs.caster.repository.CurrencyRepository;
+import com.acs.entity.USDToGBP;
+import com.acs.repository.CurrencyRepository;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;

@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.acs.caster.repository;
+package com.acs.repository;
 
-import com.acs.caster.entity.USDToGBP;
+import com.acs.entity.USDToGBP;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

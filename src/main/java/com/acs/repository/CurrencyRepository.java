@@ -5,13 +5,20 @@
  */
 package com.acs.repository;
 
-import com.acs.entity.USDToGBP;
+import com.acs.entity.Currency;
+import java.util.Date;
+import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 
 /**
  *
  * @author ACS-Ilham
  */
-public interface CurrencyRepository extends JpaRepository<USDToGBP, String>{
+public interface CurrencyRepository extends JpaRepository<Currency, String>{
+    
+    @Query("SELECT u FROM Currency u WHERE u.inputDate BETWEEN :from AND :to")
+    List<Currency> find7DaysBefore(@Param("from") Date start, @Param("to") Date end);
     
 }

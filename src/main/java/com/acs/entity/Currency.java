@@ -21,7 +21,7 @@ import javax.persistence.Temporal;
  */
 @Entity
 @Table(name = "usd_gbp")
-public class USDToGBP implements Serializable{
+public class Currency implements Serializable{
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -41,11 +41,11 @@ public class USDToGBP implements Serializable{
     @Column(name = "rate")
     private double rate;
 
-    public USDToGBP() {
+    public Currency() {
         
     }
     
-    public USDToGBP(Date inputDate, String currencyFrom, String currencyTo, double rate) {
+    public Currency(Date inputDate, String currencyFrom, String currencyTo, double rate) {
         this.inputDate = inputDate;
         this.currencyFrom = currencyFrom;
         this.currencyTo = currencyTo;

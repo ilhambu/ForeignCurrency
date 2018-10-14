@@ -24,7 +24,7 @@ public interface CurrencyRepository extends JpaRepository<Currency, String>{
     List<Currency> find7DaysBeforeAverage(@Param("from") Date start, @Param("to") Date end);
     
     @Query("SELECT u FROM Currency u WHERE u.currencyFrom=:from and u.currencyTo=:to and u.inputDate BETWEEN :fromDate AND :toDate")
-    List<Currency> find7DaysBeforeTrend(@Param("fromDate") Date start, @Param("toDate") Date end, @Param("from") String from, @Param("to") String to);
+    List<Currency> find7DaysBeforeTrackedList(@Param("fromDate") Date start, @Param("toDate") Date end, @Param("from") String from, @Param("to") String to);
     
     @Transactional
     @Modifying

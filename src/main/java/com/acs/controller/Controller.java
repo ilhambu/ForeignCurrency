@@ -82,23 +82,30 @@ public class Controller {
         try {
             JSONObject request = new JSONObject(reqBody);
 
-            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-d");
-            Date date = sdf.parse(request.getString("date"));
-            Date dateBefore = new Date(date.getTime() - 7 * 24 * 3600 * 1000);
+            if (!request.has("date")) {
+                responsTemp = responsRepository.findRespon("10");
+                respons.put("rc", responsTemp.getRc());
+                respons.put("rm", responsTemp.getRm());
+                return respons.toString();
+            } else {
+                SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-d");
+                Date date = sdf.parse(request.getString("date"));
+                Date dateBefore = new Date(date.getTime() - 7 * 24 * 3600 * 1000);
 
-            List<Currency> listCurrency = currencyRepository.find7DaysBeforeAverage(dateBefore, date);
+                List<Currency> listCurrency = currencyRepository.find7DaysBeforeAverage(dateBefore, date);
 
-            double avgRate = 0.0;
-            for (Currency uSDToGBP : listCurrency) {
-                avgRate = avgRate + uSDToGBP.getRate();
+                double avgRate = 0.0;
+                for (Currency uSDToGBP : listCurrency) {
+                    avgRate = avgRate + uSDToGBP.getRate();
+                }
+                avgRate = avgRate / listCurrency.size();
+
+                responsTemp = responsRepository.findRespon("00");
+                respons.put("rc", responsTemp.getRc());
+                respons.put("rm", responsTemp.getRm());
+                respons.put("7-day avg", avgRate);
+                return respons.toString();
             }
-            avgRate = avgRate / listCurrency.size();
-
-            responsTemp = responsRepository.findRespon("00");
-            respons.put("rc", responsTemp.getRc());
-            respons.put("rm", responsTemp.getRm());
-            respons.put("7-day avg", avgRate);
-            return respons.toString();
         } catch (NullPointerException e) {
             responsTemp = responsRepository.findRespon("40");
             respons.put("rc", responsTemp.getRc());
@@ -116,7 +123,7 @@ public class Controller {
             return respons.toString();
         }
     }
-
+    
     @RequestMapping(value = "/request/currency/rate_trend", method = RequestMethod.POST)
     public String rateTrend(@RequestBody String reqBody, HttpServletRequest req) {
         Respon responsTemp;
@@ -132,7 +139,75 @@ public class Controller {
             } else {
                 Date date = new Date();
                 Date dateBefore = new Date(date.getTime() - 7 * 24 * 3600 * 1000);
-                List<Currency> listCurrency = currencyRepository.find7DaysBeforeTrend(dateBefore, date, request.getString("from"), request.getString("to"));
+                List<Currency> listCurrency = currencyRepository.find7DaysBeforeTrackedList(dateBefore, date, request.getString("from"), request.getString("to"));
+
+                if (listCurrency.size() == 0) {
+                    responsTemp = responsRepository.findRespon("50");
+                    respons.put("rc", responsTemp.getRc());
+                    respons.put("rm", responsTemp.getRm());
+                    return respons.toString();
+                } else {
+                    double avgRate = 0.0;  
+                    double variance = 0.0;
+                    double max = 0.0;
+                    double min = Double.MAX_VALUE;
+                    ArrayList<JSONObject> arrayData = new ArrayList<>();
+                    for (Currency curr : listCurrency) {
+                        SimpleDateFormat sdfTemp = new SimpleDateFormat("yyyy-MM-d");
+                        String dateOfRate = sdfTemp.format(curr.getInputDate());
+                        JSONObject data = new JSONObject();
+                        data.put("date", dateOfRate);
+                        data.put("rate", curr.getRate());
+                        avgRate = avgRate + curr.getRate();
+                        if (max < curr.getRate()) {
+                            max = curr.getRate();
+                        }
+                        if (min > curr.getRate()) {
+                            min = curr.getRate();
+                        }
+                        arrayData.add(data);
+                    }
+                    avgRate = avgRate / listCurrency.size();
+                    variance = max - min;
+                    
+                    responsTemp = responsRepository.findRespon("00");
+                    respons.put("rc", responsTemp.getRc());
+                    respons.put("rm", responsTemp.getRm());
+                    respons.put("data", arrayData);
+                    respons.put("Average", avgRate);
+                    respons.put("Variance", variance);
+                    return respons.toString();
+                }
+            }
+        } catch (NullPointerException e) {
+            responsTemp = responsRepository.findRespon("40");
+            respons.put("rc", responsTemp.getRc());
+            respons.put("rm", responsTemp.getRm());
+            return respons.toString();
+        } catch (Exception e) {
+            responsTemp = responsRepository.findRespon("30");
+            respons.put("rc", responsTemp.getRc());
+            respons.put("rm", responsTemp.getRm());
+            return respons.toString();
+        }
+    }
+
+    @RequestMapping(value = "/request/currency/rate_tracked_list", method = RequestMethod.POST)
+    public String rateTrackedList(@RequestBody String reqBody, HttpServletRequest req) {
+        Respon responsTemp;
+        JSONObject respons = new JSONObject();
+        try {
+            JSONObject request = new JSONObject(reqBody);
+
+            if (!request.has("from") || !request.has("to")) {
+                responsTemp = responsRepository.findRespon("10");
+                respons.put("rc", responsTemp.getRc());
+                respons.put("rm", responsTemp.getRm());
+                return respons.toString();
+            } else {
+                Date date = new Date();
+                Date dateBefore = new Date(date.getTime() - 7 * 24 * 3600 * 1000);
+                List<Currency> listCurrency = currencyRepository.find7DaysBeforeTrackedList(dateBefore, date, request.getString("from"), request.getString("to"));
 
                 if (listCurrency.size() == 0) {
                     responsTemp = responsRepository.findRespon("50");

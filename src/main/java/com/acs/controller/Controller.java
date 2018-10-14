@@ -6,9 +6,12 @@
 package com.acs.controller;
 
 import com.acs.entity.Currency;
+import com.acs.entity.Respon;
 import com.acs.repository.CurrencyRepository;
+import com.acs.repository.ResponsRepository;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import javax.servlet.http.HttpServletRequest;
@@ -25,83 +28,181 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class Controller {
-    
+
     @Autowired
     CurrencyRepository currencyRepository;
-    
-    String respon = new String();
-    
+
+    @Autowired
+    ResponsRepository responsRepository;
+
     @RequestMapping(value = "/request/currency/add_rate", method = RequestMethod.POST)
-    public String addRateUSDToGBP(@RequestBody String reqBody, HttpServletRequest req) {
+    public String addRateCurrency(@RequestBody String reqBody, HttpServletRequest req) {
+        Respon responsTemp;
+        JSONObject respons = new JSONObject();
         try {
             JSONObject request = new JSONObject(reqBody);
-            
-            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-d");
-            Date date = sdf.parse(request.getString("date"));         
-            currencyRepository.save(new Currency(date, request.getString("from"), request.getString("to"), request.getDouble("rate")));
-            
-            return respon = "Success";
+            if (!request.has("from") || !request.has("to") || !request.has("date") || !request.has("rate")) {
+                responsTemp = responsRepository.findRespon("10");
+                respons.put("rc", responsTemp.getRc());
+                respons.put("rm", responsTemp.getRm());
+                return respons.toString();
+            } else {
+                SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-d");
+                Date date = sdf.parse(request.getString("date"));
+                currencyRepository.save(new Currency(date, request.getString("from"), request.getString("to"), request.getDouble("rate")));
+
+                responsTemp = responsRepository.findRespon("00");
+                respons.put("rc", responsTemp.getRc());
+                respons.put("rm", responsTemp.getRm());
+                return respons.toString();
+            }
+
         } catch (NullPointerException e) {
-            return respon = "Missing Parameter";
+            responsTemp = responsRepository.findRespon("40");
+            respons.put("rc", responsTemp.getRc());
+            respons.put("rm", responsTemp.getRm());
+            return respons.toString();
         } catch (ParseException e) {
-            return respon = "Format Tanggal Tidak Sesuai";
+            responsTemp = responsRepository.findRespon("20");
+            respons.put("rc", responsTemp.getRc());
+            respons.put("rm", responsTemp.getRm());
+            return respons.toString();
         } catch (Exception e) {
-            return respon = "Internal Server Error";
-        } 
+            responsTemp = responsRepository.findRespon("30");
+            respons.put("rc", responsTemp.getRc());
+            respons.put("rm", responsTemp.getRm());
+            return respons.toString();
+        }
     }
-    
+
     @RequestMapping(value = "/request/currency/rate_tracked", method = RequestMethod.POST)
     public String rateTracked(@RequestBody String reqBody, HttpServletRequest req) {
+        Respon responsTemp;
+        JSONObject respons = new JSONObject();
         try {
             JSONObject request = new JSONObject(reqBody);
-            
+
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-d");
             Date date = sdf.parse(request.getString("date"));
             Date dateBefore = new Date(date.getTime() - 7 * 24 * 3600 * 1000);
-            
-            List<Currency> listCurrency = currencyRepository.find7DaysBefore(dateBefore, date);
-            
+
+            List<Currency> listCurrency = currencyRepository.find7DaysBeforeAverage(dateBefore, date);
+
             double avgRate = 0.0;
             for (Currency uSDToGBP : listCurrency) {
                 avgRate = avgRate + uSDToGBP.getRate();
+                System.out.println(uSDToGBP.getRate());
             }
             avgRate = avgRate / listCurrency.size();
-                                    
-            return respon = "Success" + " " + avgRate;
+
+            responsTemp = responsRepository.findRespon("00");
+            respons.put("rc", responsTemp.getRc());
+            respons.put("rm", responsTemp.getRm());
+            respons.put("7-day avg", avgRate);
+            return respons.toString();
         } catch (NullPointerException e) {
-            return respon = "Missing Parameter";
+            responsTemp = responsRepository.findRespon("40");
+            respons.put("rc", responsTemp.getRc());
+            respons.put("rm", responsTemp.getRm());
+            return respons.toString();
         } catch (ParseException e) {
-            return respon = "Format Tanggal Tidak Sesuai";
+            responsTemp = responsRepository.findRespon("20");
+            respons.put("rc", responsTemp.getRc());
+            respons.put("rm", responsTemp.getRm());
+            return respons.toString();
         } catch (Exception e) {
-            return respon = "Internal Server Error";
-        } 
+            responsTemp = responsRepository.findRespon("30");
+            respons.put("rc", responsTemp.getRc());
+            respons.put("rm", responsTemp.getRm());
+            return respons.toString();
+        }
     }
-    
+
     @RequestMapping(value = "/request/currency/rate_trend", method = RequestMethod.POST)
     public String rateTrend(@RequestBody String reqBody, HttpServletRequest req) {
+        Respon responsTemp;
+        JSONObject respons = new JSONObject();
         try {
             JSONObject request = new JSONObject(reqBody);
-            
-            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-d");
-            Date date = sdf.parse(request.getString("date"));
-            Date dateBefore = new Date(date.getTime() - 7 * 24 * 3600 * 1000);
-            
-            List<Currency> listCurrency = currencyRepository.find7DaysBefore(dateBefore, date);
-            
-            for (Currency uSDToGBP : listCurrency) {
-                SimpleDateFormat sdfTemp  = new SimpleDateFormat("yyyy-MM-d");
-                String dateOfRate = sdfTemp.format(uSDToGBP.getInputDate());
-                System.out.println(dateOfRate + " " + uSDToGBP.getRate());
+
+            if (!request.has("from") || !request.has("to")) {
+                responsTemp = responsRepository.findRespon("10");
+                respons.put("rc", responsTemp.getRc());
+                respons.put("rm", responsTemp.getRm());
+                return respons.toString();
+            } else {
+                Date date = new Date();
+                Date dateBefore = new Date(date.getTime() - 7 * 24 * 3600 * 1000);
+                List<Currency> listCurrency = currencyRepository.find7DaysBeforeTrend(dateBefore, date, request.getString("from"), request.getString("to"));
+
+                if (listCurrency.size() == 0) {
+                    responsTemp = responsRepository.findRespon("50");
+                    respons.put("rc", responsTemp.getRc());
+                    respons.put("rm", responsTemp.getRm());
+                    return respons.toString();
+                } else {
+                    ArrayList<JSONObject> arrayData = new ArrayList<>();
+                    for (Currency curr : listCurrency) {
+                        SimpleDateFormat sdfTemp = new SimpleDateFormat("yyyy-MM-d");
+                        String dateOfRate = sdfTemp.format(curr.getInputDate());
+                        JSONObject data = new JSONObject();
+                        data.put("date", dateOfRate);
+                        data.put("rate", curr.getRate());
+                        arrayData.add(data);
+                    }
+
+                    responsTemp = responsRepository.findRespon("00");
+                    respons.put("rc", responsTemp.getRc());
+                    respons.put("rm", responsTemp.getRm());
+                    respons.put("data", arrayData);
+                    return respons.toString();
+                }
             }
-                                    
-            return respon = "Success";
         } catch (NullPointerException e) {
-            return respon = "Missing Parameter";
-        } catch (ParseException e) {
-            return respon = "Format Tanggal Tidak Sesuai";
+            responsTemp = responsRepository.findRespon("40");
+            respons.put("rc", responsTemp.getRc());
+            respons.put("rm", responsTemp.getRm());
+            return respons.toString();
         } catch (Exception e) {
-            return respon = "Internal Server Error";
-        } 
+            responsTemp = responsRepository.findRespon("30");
+            respons.put("rc", responsTemp.getRc());
+            respons.put("rm", responsTemp.getRm());
+            return respons.toString();
+        }
     }
-    
+
+    @RequestMapping(value = "/request/currency/delete", method = RequestMethod.POST)
+    public String rateDelete(@RequestBody String reqBody, HttpServletRequest req) {
+        Respon responsTemp;
+        JSONObject respons = new JSONObject();
+        try {
+            JSONObject request = new JSONObject(reqBody);
+
+            if (!request.has("from") || !request.has("to")) {
+                responsTemp = responsRepository.findRespon("10");
+                respons.put("rc", responsTemp.getRc());
+                respons.put("rm", responsTemp.getRm());
+                return respons.toString();
+            } else {
+                currencyRepository.deleteRate(request.getString("from"), request.getString("to"));
+
+                responsTemp = responsRepository.findRespon("00");
+                respons.put("rc", responsTemp.getRc());
+                respons.put("rm", responsTemp.getRm());
+                return respons.toString();
+            }
+
+        } catch (NullPointerException e) {
+            responsTemp = responsRepository.findRespon("40");
+            respons.put("rc", responsTemp.getRc());
+            respons.put("rm", responsTemp.getRm());
+            return respons.toString();
+        } catch (Exception e) {
+            responsTemp = responsRepository.findRespon("30");
+            respons.put("rc", responsTemp.getRc());
+            respons.put("rm", responsTemp.getRm());
+            return respons.toString();
+        }
+    }
+
 }

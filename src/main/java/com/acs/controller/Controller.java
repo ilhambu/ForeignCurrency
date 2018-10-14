@@ -91,7 +91,6 @@ public class Controller {
             double avgRate = 0.0;
             for (Currency uSDToGBP : listCurrency) {
                 avgRate = avgRate + uSDToGBP.getRate();
-                System.out.println(uSDToGBP.getRate());
             }
             avgRate = avgRate / listCurrency.size();
 
